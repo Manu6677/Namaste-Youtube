@@ -1,6 +1,6 @@
 import React from "react";
 import ButtonList from "./ButtonList";
-import VideoCard from "./VideoCard";
+
 import VideoContainer from "./VideoContainer";
 
 const MainContainer = () => {
@@ -8,7 +8,6 @@ const MainContainer = () => {
     <div className="col-span-11 h-screen">
       <ButtonList />
       <VideoContainer />
-      <VideoCard />
     </div>
   );
 };

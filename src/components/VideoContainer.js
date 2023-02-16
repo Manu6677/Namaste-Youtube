@@ -15,9 +15,13 @@ const VideoContainer = () => {
     // console.log(json);
     setVideos(json.items);
   };
+
+  // if (videos.length === 0) return null;
+  // return <div>{videos.length > 0 && <VideoCard info={videos[0]} />}</div>;
   return (
-    <div>
-      <VideoCard info={videos[0]} />
+    <div className="flex flex-wrap">
+      {videos.length > 0 &&
+        videos.map((item) => <VideoCard key={item.id} info={item} />)}
     </div>
   );
 };
