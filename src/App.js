@@ -10,8 +10,9 @@ import WatchPage from "./components/WatchPage";
 const appRouter = createBrowserRouter([
   {
     path: "/",
-    element: <Body />,
+    element: <Body />, // sirf body change ho rhi hai route change krne pe(next page jane p) but header and side bar remain same
     children: [
+      // thesee children will go where is the outlet present
       {
         path: "/",
         element: <MainContainer />,

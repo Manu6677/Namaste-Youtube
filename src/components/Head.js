@@ -4,7 +4,7 @@ import { FaUser } from "react-icons/fa";
 import { AiOutlineSearch } from "react-icons/ai";
 import { useDispatch } from "react-redux";
 import { toggleMenu } from "../utils/appSlice";
-
+import { Link } from "react-router-dom";
 const Head = () => {
   const [search, setSearch] = useState("Search");
   const dispatch = useDispatch();
@@ -20,11 +20,14 @@ const Head = () => {
           className="h-10 w-7"
           onClick={() => toggleMenuHandler()}
         />
-        <img
-          src="https://www.freeiconspng.com/thumbs/youtube-logo-png/youtube-logo-png-transparent-image-5.png"
-          alt="youtube-logo"
-          className="h-20 pl-3"
-        />
+
+        <a href="/">
+          <img
+            src="https://www.freeiconspng.com/thumbs/youtube-logo-png/youtube-logo-png-transparent-image-5.png"
+            alt="youtube-logo"
+            className="h-20 pl-3"
+          />
+        </a>
       </div>
 
       <div className=" col-span-10 flex items-center pl-11">
